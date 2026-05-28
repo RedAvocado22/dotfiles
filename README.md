@@ -24,6 +24,6 @@ dotfiles/
 
 ## Notes
 
-- Caelestia shell requires building from source: [caelestia-shell](https://github.com/caelestia-dots/shell)
+- Caelestia shell requires building from source: [caelestia-dots/shell](https://github.com/caelestia-dots/shell)
 - Monitors: Xiaomi 24" HDMI @ 100Hz + Laptop eDP @ 240Hz
 - Bluetooth audio fix: sets M106BT volume to 100% on connect
