@@ -1,0 +1,103 @@
+{
+    "appearance": {
+        "font": {
+            "family": {
+                "clock": "Rubik",
+                "material": "Material Symbols Rounded",
+                "mono": "CaskaydiaCove NF",
+                "sans": "JetBrains Mono ExtraLight"
+            },
+            "size": {
+                "scale": 1
+            }
+        },
+        "transparency": {
+            "base": 0.85,
+            "enabled": true,
+            "layers": 0.4
+        }
+    },
+    "background": {
+        "desktopClock": {
+            "enabled": false,
+            "invertColors": false,
+            "shadow": {
+                "enabled": true
+            }
+        },
+        "enabled": true,
+        "wallpaperEnabled": true
+    },
+    "bar": {
+        "excludedScreens": [
+        ],
+        "status": {
+            "showBattery": true,
+            "showBluetooth": true
+        },
+        "tray": {
+            "hiddenIcons": [
+                "fcitx",
+                "fcitx5",
+                "Fcitx",
+                "fcitx-unikey"
+            ]
+        },
+        "workspaces": {
+            "maxWindowIcons": 7
+        }
+    },
+    "general": {
+        "apps": {
+            "terminal": [
+                "kitty"
+            ]
+        },
+        "mediaGifSpeedAdjustment": 150,
+        "sessionGifSpeed": 2
+    },
+    "launcher": {
+        "actions": [
+            {
+                "command": [
+                    "quickshell",
+                    "-c",
+                    "caelestia",
+                    "ipc",
+                    "call",
+                    "drawers",
+                    "toggle",
+                    "sidebar"
+                ],
+                "description": "Configure the shell",
+                "icon": "settings",
+                "name": "Settings"
+            },
+            {
+                "command": [
+                    "loginctl",
+                    "lock-session"
+                ],
+                "description": "Lock the current session",
+                "icon": "lock",
+                "name": "Lock"
+            },
+            {
+                "command": [
+                    "systemctl",
+                    "suspend-then-hibernate"
+                ],
+                "description": "Suspend then hibernate",
+                "icon": "bedtime",
+                "name": "Sleep"
+            }
+        ],
+        "hiddenApps": [
+            "org.gnome.Settings"
+        ]
+    },
+    "paths": {
+        "mediaGif": "/home/cuong/Downloads/shigure-ui-dance.gif",
+        "sessionGif": "/home/cuong/Downloads/teto-animation.gif"
+    }
+}
