@@ -29,9 +29,13 @@
         "wallpaperEnabled": true
     },
     "bar": {
+        "activeWindow": {
+            "compact": true
+        },
         "excludedScreens": [
         ],
         "status": {
+            "showAudio": true,
             "showBattery": true,
             "showBluetooth": true
         },
@@ -53,6 +57,10 @@
                 "kitty"
             ]
         },
+        "idle": {
+            "timeouts": [
+            ]
+        },
         "logo": "/home/cuong/Pictures/icons/logo.svg",
         "mediaGifSpeedAdjustment": 150,
         "sessionGifSpeed": 2
@@ -66,9 +74,8 @@
                     "caelestia",
                     "ipc",
                     "call",
-                    "drawers",
-                    "toggle",
-                    "sidebar"
+                    "controlCenter",
+                    "open"
                 ],
                 "description": "Configure the shell",
                 "icon": "settings",
@@ -91,6 +98,26 @@
                 "description": "Suspend then hibernate",
                 "icon": "bedtime",
                 "name": "Sleep"
+            },
+            {
+                "command": [
+                    "bash",
+                    "-c",
+                    "f=$(find ~/Pictures/Wallpapers ~/Pictures/wallpapers -type f 2>/dev/null | wofi --dmenu --prompt 'Chọn wallpaper' --width 600 --height 400) && [ -n \"$f\" ] && caelestia wallpaper -f \"$f\" -N"
+                ],
+                "description": "Change the current wallpaper",
+                "icon": "wallpaper",
+                "name": "Wallpaper"
+            },
+            {
+                "command": [
+                    "caelestia",
+                    "wallpaper",
+                    "-r"
+                ],
+                "description": "Switch to a random wallpaper",
+                "icon": "shuffle",
+                "name": "Random wallpaper"
             }
         ],
         "hiddenApps": [
@@ -98,8 +125,8 @@
         ]
     },
     "paths": {
-        "mediaGif": "/home/cuong/Downloads/shigure-ui-dance.gif",
-        "sessionGif": "/home/cuong/Downloads/teto-animation.gif"
+        "mediaGif": "/home/cuong/Pictures/gifs/shigure-ui-dance.gif",
+        "sessionGif": "/home/cuong/Pictures/gifs/teto-animation.gif"
     },
     "services": {
         "useFahrenheit": false,
