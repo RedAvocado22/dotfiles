@@ -101,9 +101,8 @@
             },
             {
                 "command": [
-                    "bash",
-                    "-c",
-                    "f=$(find ~/Pictures/Wallpapers ~/Pictures/wallpapers -type f 2>/dev/null | wofi --dmenu --prompt 'Chọn wallpaper' --width 600 --height 400) && [ -n \"$f\" ] && caelestia wallpaper -f \"$f\" -N"
+                    "autocomplete",
+                    "wallpaper"
                 ],
                 "description": "Change the current wallpaper",
                 "icon": "wallpaper",
