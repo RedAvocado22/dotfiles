@@ -100,5 +100,9 @@
     "paths": {
         "mediaGif": "/home/cuong/Downloads/shigure-ui-dance.gif",
         "sessionGif": "/home/cuong/Downloads/teto-animation.gif"
+    },
+    "services": {
+        "useFahrenheit": false,
+        "useFahrenheitPerformance": false
     }
 }
