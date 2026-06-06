@@ -1,0 +1,8 @@
+[Hotkey]
+# Trigger Input Method
+TriggerKeys=0
+TriggerKeys\0\0=Control+space
+
+[Behavior]
+# Share Input State
+ShareInputState=All
